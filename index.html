@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Hello, World!</h1>
+      <div>
+        <button id="change">Next</button>
+        <button id="hide">Hide</button>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $('#change').click(() => {
+        $('#title').text("It's Fathin!");
+      });
+      $('#hide').click(() => {
+        $('#title').hide();
+        $('#change').hide();
+        $('#hide').text("Ctrl+R");
+      });
+    </script>
+  </body>
+</html>
